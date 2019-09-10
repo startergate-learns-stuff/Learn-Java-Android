@@ -2,5 +2,15 @@
 
 public class Automobile extends Car {
     // 기본적으로 Car 클래스의 color, speed, maxSpeed라는 필드와 getter, setter, up, down 등등 메소드 사용 가능
-    // 단 필드들이 최소 protected로 설정
+    // 단 필드들이 최소 protected로 설정되어 있어야 함
+    int seatNum; // 좌석의 갯수
+
+    int getSeatNum() {
+        return this.seatNum;
+    }
+
+    @Override
+    public void upSpeed(int value) {
+        speed += value;
+    }
 }
